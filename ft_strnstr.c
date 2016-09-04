@@ -6,7 +6,7 @@
 /*   By: lmarques <lmarques@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/08/06 22:59:18 by lmarques          #+#    #+#             */
-/*   Updated: 2016/09/03 21:25:12 by lmarques         ###   ########.fr       */
+/*   Updated: 2016/09/04 18:15:54 by lmarques         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,22 +16,16 @@ char	*ft_strnstr(const char *s1, const char *s2, size_t n)
 {
 	size_t	count;
 	size_t	count2;
-	size_t	count3;
 
 	count = 0;
-	if (s2[count] == '\0')
-		return ((char *)s1);
-	while (s1[count] && count < n)
+	while (s1[count])
 	{
-		count2 = count;
-		count3 = 0;
-		while (s1[count2] == s2[count3])
-		{
-			count2++;
-			count3++;
-		}
-		if (count3 >= (size_t)ft_strlen(s2))
-			return ((char *)s1 + count);
+		count2 = 0;
+		while (count2 < n && s2[count2] && s1[count + count2] &&
+				s1[count + count2] == s2[count2])
+				count2++;
+		if (s2[count2] == '\0' || count2 == n)
+			return ((char *)(s1 + count));
 		count++;
 	}
 	return (0);

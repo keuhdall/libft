@@ -6,7 +6,7 @@
 /*   By: lmarques <lmarques@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/08/08 02:34:36 by lmarques          #+#    #+#             */
-/*   Updated: 2016/09/02 18:19:15 by lmarques         ###   ########.fr       */
+/*   Updated: 2016/09/04 18:18:48 by lmarques         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ char	*ft_strrchr(const char *s, int c)
 {
 	int	count;
 
-	count = ft_strlen(s);
+	count = ft_strlen(s) - 1;
 	while (s[count])
 	{
 		if (s[count] == (char)c)
