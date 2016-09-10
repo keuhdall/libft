@@ -6,7 +6,7 @@
 /*   By: lmarques <lmarques@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/07/25 23:12:49 by lmarques          #+#    #+#             */
-/*   Updated: 2016/09/02 20:31:12 by lmarques         ###   ########.fr       */
+/*   Updated: 2016/09/09 04:46:34 by lmarques         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,5 +26,5 @@ void	*ft_memchr(const void *s, int c, size_t n)
 		count++;
 		str++;
 	}
-	return (0);
+	return (NULL);
 }

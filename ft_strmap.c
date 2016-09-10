@@ -6,7 +6,7 @@
 /*   By: lmarques <lmarques@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/08/27 02:23:06 by lmarques          #+#    #+#             */
-/*   Updated: 2016/08/27 19:14:04 by lmarques         ###   ########.fr       */
+/*   Updated: 2016/09/09 04:11:22 by lmarques         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ char	*ft_strmap(char const *s, char (*f)(char))
 	char	*str;
 
 	count = 0;
-	str = 0;
+	str = NULL;
 	str = (char *)malloc(sizeof(char) * ft_strlen(s) + 1);
 	if (str)
 	{

@@ -6,7 +6,7 @@
 /*   By: lmarques <lmarques@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/08/27 18:41:30 by lmarques          #+#    #+#             */
-/*   Updated: 2016/09/02 17:46:31 by lmarques         ###   ########.fr       */
+/*   Updated: 2016/09/09 04:13:38 by lmarques         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ char	*ft_strsub(char const *s, unsigned int start, size_t len)
 	char	*str;
 
 	count = 0;
-	str = 0;
+	str = NULL;
 	str = (char *)malloc(sizeof(char) * len + 1);
 	if (str)
 	{

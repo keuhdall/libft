@@ -6,14 +6,14 @@
 /*   By: lmarques <lmarques@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/08/05 04:37:51 by lmarques          #+#    #+#             */
-/*   Updated: 2016/08/08 04:02:42 by lmarques         ###   ########.fr       */
+/*   Updated: 2016/09/05 16:56:36 by lmarques         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_isprint(int c)
 {
 	if (c >= 32 && c <= 126)
-		return (16384);
+		return (1);
 	else
 		return (0);
 }

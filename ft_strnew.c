@@ -6,7 +6,7 @@
 /*   By: lmarques <lmarques@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/08/27 01:10:19 by lmarques          #+#    #+#             */
-/*   Updated: 2016/09/02 17:44:24 by lmarques         ###   ########.fr       */
+/*   Updated: 2016/09/09 04:12:54 by lmarques         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@ char *ft_strnew(size_t size)
 	char	*str;
 
 	count = 0;
+	str = NULL;
 	str = (char *)malloc(sizeof(char) * size + 1);
 	if (str)
 	{

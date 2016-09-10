@@ -6,14 +6,14 @@
 /*   By: lmarques <lmarques@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/08/04 05:52:27 by lmarques          #+#    #+#             */
-/*   Updated: 2016/08/27 19:04:47 by lmarques         ###   ########.fr       */
+/*   Updated: 2016/09/05 16:55:45 by lmarques         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_isdigit(int c)
 {
 	if (c >= 48 && c <= 57)
-		return (2048);
+		return (1);
 	else
 		return (0);
 }

@@ -6,14 +6,14 @@
 /*   By: lmarques <lmarques@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/08/27 21:36:58 by lmarques          #+#    #+#             */
-/*   Updated: 2016/08/31 02:13:20 by lmarques         ###   ########.fr       */
+/*   Updated: 2016/09/10 01:41:22 by lmarques         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdio.h>
 #include <stdlib.h>
-
+/*
 static	int	ft_slen(const char *s)
 {
 	int	count;
@@ -61,9 +61,10 @@ static int	ft_count_nb(int nb)
 	}
 	return (count);
 }
-
+*/
 char	*ft_itoa(int nb)
 {
+/*
 	int		count;
 	int		tmp;
 	int		is_negative;
@@ -99,11 +100,7 @@ char	*ft_itoa(int nb)
 		str = ft_reverse(str, count);
 	}
 	return (str);
-}
-
-int	main(int argc, char *argv[])
-{
-	printf("%s\n", ft_itoa(atoi(argv[1])));
-	argc++;
-	return (0);
+*/
+	nb++;
+	return ("0");
 }
