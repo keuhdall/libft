@@ -41,6 +41,8 @@ char	*ft_strtrim(char const *s)
 	int		count_str;
 	char	*str;
 
+	if (!s)
+		return (NULL);
 	count_s = ft_nchar(s);
 	count_str = 0;
 	str = NULL;
