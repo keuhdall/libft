@@ -23,5 +23,7 @@ char	*ft_strchr(const char *s, int c)
 			return ((char *)&s[count]);
 		count++;
 	}
+	if (s[count] == (char)c)
+		return ((char *)&s[count]);
 	return (NULL);
 }
