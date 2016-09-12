@@ -15,6 +15,8 @@ int	ft_strequ(const char *s1, const char *s2)
 	int	count;
 
 	count = 0;
+	if (!s1 || !s2)
+		return (0);
 	while (s1[count] && s2[count] && s1[count] == s2[count])
 		count++;
 	if (s1[count] != s2[count])

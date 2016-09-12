@@ -15,6 +15,8 @@ void	ft_striter(char *s, void (*f)(char *))
 	int	count;
 
 	count = 0;
+	if (!s || !f)
+		return;
 	while (s[count])
 	{
 		(*f)(&s[count]);
