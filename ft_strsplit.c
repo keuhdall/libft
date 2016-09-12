@@ -18,6 +18,8 @@ static int	ft_nbwords(char const *str, char c)
 	int	count_str;
 	int	count_words;
 
+	count_str = 0;
+	count_words = 0;
 	while (str[count_str])
 	{
 		if (str[count_str] != c && (str[count_str] == 0 || str[count_str] == c))
