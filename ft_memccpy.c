@@ -28,5 +28,6 @@ void	*ft_memccpy(void *dst, const void *src, int c, size_t n)
 	}
 	if (count == n)
 		return (0);
+	str_dst[count] = str_src[count];
 	return (dst + count + 1);
 }
