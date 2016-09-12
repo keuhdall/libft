@@ -70,5 +70,7 @@ fclean: clean
 re: fclean all
 
 test: $(NAME)
-	gcc tests/*.c tests/libtest/*c -o ./tests/a.out -L. -lft
-	./tests/a.out
+	gcc -Wall -Werror -Wextra -g -c $(SRC)
+	ar rc $(NAME) $(OBJECTS)
+	gcc tests/*.c tests/libtest/*c -o ./tests/a.out -g -L. -lft
+	valgrind --track-origins=yes --leak-check=full ./tests/a.out
