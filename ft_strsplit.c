@@ -6,12 +6,11 @@
 /*   By: lmarques <lmarques@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/08/30 23:12:09 by lmarques          #+#    #+#             */
-/*   Updated: 2016/09/14 22:30:16 by lmarques         ###   ########.fr       */
+/*   Updated: 2016/09/15 22:44:40 by lmarques         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
 static int	ft_nbwords(char const *str, char c)
 {
@@ -87,20 +86,3 @@ char	**ft_strsplit(char const *s, char c)
 	}
 	return (str);
 }
-/*
-int	main(int argc, char *argv[])
-{
-	char	**tab;
-	int		count;
-
-	tab = ft_strsplit(argv[1], argv[2][0]);
-	count = 0;
-	while (tab[count])
-	{
-		printf("%s\n", tab[count]);
-		count++;
-	}
-	argc++;
-	return (0);
-}
-*/
