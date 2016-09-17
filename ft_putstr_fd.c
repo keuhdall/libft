@@ -6,7 +6,7 @@
 /*   By: lmarques <lmarques@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/08/30 22:37:51 by lmarques          #+#    #+#             */
-/*   Updated: 2016/08/30 22:40:10 by lmarques         ###   ########.fr       */
+/*   Updated: 2016/09/17 21:38:43 by lmarques         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ void	ft_putstr_fd(char const *s, int fd)
 	int	count;
 
 	count = 0;
+	if (!s)
+		return;
 	while (s[count])
 	{
 		write(fd, &s[count], 1);
