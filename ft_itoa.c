@@ -6,7 +6,7 @@
 /*   By: lmarques <lmarques@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/08/27 21:36:58 by lmarques          #+#    #+#             */
-/*   Updated: 2016/09/10 01:41:22 by lmarques         ###   ########.fr       */
+/*   Updated: 2016/09/20 14:38:48 by lmarques         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ static int	ft_count_nb(int nb)
 	return (count);
 }
 
-char	*ft_itoa(int nb)
+char		*ft_itoa(int nb)
 {
 	char		*str;
 	int			count;

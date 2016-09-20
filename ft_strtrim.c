@@ -6,7 +6,7 @@
 /*   By: lmarques <lmarques@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/08/27 20:16:42 by lmarques          #+#    #+#             */
-/*   Updated: 2016/09/10 03:23:26 by lmarques         ###   ########.fr       */
+/*   Updated: 2016/09/20 14:47:12 by lmarques         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ static	int	ft_rnchar(const char *s)
 	return (count + 1);
 }
 
-char	*ft_strtrim(char const *s)
+char		*ft_strtrim(char const *s)
 {
 	int		count_s;
 	int		count_str;

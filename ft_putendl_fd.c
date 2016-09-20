@@ -6,7 +6,7 @@
 /*   By: lmarques <lmarques@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/08/30 22:42:53 by lmarques          #+#    #+#             */
-/*   Updated: 2016/09/17 21:39:32 by lmarques         ###   ########.fr       */
+/*   Updated: 2016/09/20 14:40:19 by lmarques         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ void	ft_putendl_fd(char const *s, int fd)
 
 	count = 0;
 	if (!s)
-		return;
+		return ;
 	while (s[count])
 	{
 		write(fd, &s[count], 1);

@@ -6,13 +6,13 @@
 /*   By: lmarques <lmarques@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/08/27 01:10:19 by lmarques          #+#    #+#             */
-/*   Updated: 2016/09/09 04:12:54 by lmarques         ###   ########.fr       */
+/*   Updated: 2016/09/20 14:42:59 by lmarques         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char *ft_strnew(size_t size)
+char	*ft_strnew(size_t size)
 {
 	size_t	count;
 	char	*str;

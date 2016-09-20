@@ -6,7 +6,7 @@
 /*   By: lmarques <lmarques@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/14 05:01:23 by lmarques          #+#    #+#             */
-/*   Updated: 2016/09/14 16:33:03 by lmarques         ###   ########.fr       */
+/*   Updated: 2016/09/20 14:38:44 by lmarques         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void	ft_lstdel(t_list **alst, void (*del)(void *, size_t))
 
 	tmp = *alst;
 	if (!alst)
-		return;
+		return ;
 	while (tmp)
 	{
 		tmp2 = tmp;

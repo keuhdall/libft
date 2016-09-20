@@ -6,7 +6,7 @@
 /*   By: lmarques <lmarques@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/08/30 23:12:09 by lmarques          #+#    #+#             */
-/*   Updated: 2016/09/15 22:44:40 by lmarques         ###   ########.fr       */
+/*   Updated: 2016/09/20 14:45:57 by lmarques         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,7 +59,7 @@ static char	*ft_copystr(char const *str, char c)
 	return (str2);
 }
 
-char	**ft_strsplit(char const *s, char c)
+char		**ft_strsplit(char const *s, char c)
 {
 	int		count_s;
 	int		count_str;

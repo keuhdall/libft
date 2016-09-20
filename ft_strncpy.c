@@ -6,7 +6,7 @@
 /*   By: lmarques <lmarques@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/08/05 04:07:51 by lmarques          #+#    #+#             */
-/*   Updated: 2016/09/03 23:08:27 by lmarques         ###   ########.fr       */
+/*   Updated: 2016/09/20 14:45:29 by lmarques         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,4 +29,3 @@ char	*ft_strncpy(char *dst, const char *src, size_t len)
 	}
 	return (dst);
 }
-

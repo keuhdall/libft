@@ -6,7 +6,7 @@
 /*   By: lmarques <lmarques@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/14 16:50:46 by lmarques          #+#    #+#             */
-/*   Updated: 2016/09/14 16:53:50 by lmarques         ###   ########.fr       */
+/*   Updated: 2016/09/20 14:39:13 by lmarques         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ void	ft_lstiter(t_list *lst, void (*f)(t_list *elem))
 	t_list	*tmp;
 
 	if (!lst)
-		return;
+		return ;
 	tmp = lst;
 	while (tmp)
 	{

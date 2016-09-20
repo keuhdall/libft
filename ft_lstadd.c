@@ -6,7 +6,7 @@
 /*   By: lmarques <lmarques@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/14 16:33:14 by lmarques          #+#    #+#             */
-/*   Updated: 2016/09/14 16:50:30 by lmarques         ###   ########.fr       */
+/*   Updated: 2016/09/20 14:38:32 by lmarques         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 void	ft_lstadd(t_list **alst, t_list *new)
 {
 	if (!alst || !*alst || !new)
-		return;
+		return ;
 	new->next = *alst;
 	*alst = new;
 }
