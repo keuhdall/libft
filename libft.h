@@ -6,7 +6,7 @@
 /*   By: lmarques <lmarques@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/08/06 23:35:12 by lmarques          #+#    #+#             */
-/*   Updated: 2016/09/20 14:52:43 by lmarques         ###   ########.fr       */
+/*   Updated: 2016/10/27 17:53:08 by lmarques         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,14 +46,15 @@ void				*ft_memcpy(void *dst, const void *src, size_t n);
 void				ft_memdel(void **ap);
 void				*ft_memmove(void *dst, const void *src, size_t len);
 void				*ft_memset(void *b, int c, size_t len);
-void				ft_putchar(char c);
-void				ft_putchar_fd(char c, int fd);
+void				ft_putchar(int c);
+void				ft_putchar_fd(int c, int fd);
 void				ft_putendl(char const *c);
 void				ft_putendl_fd(char const *c, int fd);
 void				ft_putnbr(int n);
 void				ft_putnbr_fd(int n, int fd);
 void				ft_putstr(char const *s);
 void				ft_putstr_fd(char const *s, int fd);
+char				*ft_realloc(char *str, int size);
 char				*ft_strcat(char *s1, const char *s2);
 char				*ft_strchr(const char *s, int c);
 void				ft_strclr(char *s);
