@@ -6,7 +6,7 @@
 /*   By: lmarques <lmarques@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/08/27 19:17:33 by lmarques          #+#    #+#             */
-/*   Updated: 2016/09/09 04:10:49 by lmarques         ###   ########.fr       */
+/*   Updated: 2016/11/02 18:12:32 by lmarques         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {
-	int		count_params;
-	int		count_str;
+	size_t	count_params;
+	size_t	count_str;
 	char	*str;
 
 	count_params = 0;
