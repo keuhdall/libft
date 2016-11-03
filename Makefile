@@ -8,10 +8,12 @@ SRC = ft_atoi.c \
 	  ft_isdigit.c \
 	  ft_isprint.c \
 	  ft_itoa.c \
+	  ft_lst_push_back.c \
 	  ft_lstadd.c \
 	  ft_lstdel.c \
 	  ft_lstdelone.c \
 	  ft_lstiter.c \
+	  ft_lstmap.c \
 	  ft_lstnew.c \
 	  ft_lstsize.c \
 	  ft_memalloc.c \
@@ -75,3 +77,5 @@ fclean: clean
 		rm -rf $(NAME)
 
 re: fclean all
+
+.PHONY: clean
