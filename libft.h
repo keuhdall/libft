@@ -6,7 +6,7 @@
 /*   By: lmarques <lmarques@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/08/06 23:35:12 by lmarques          #+#    #+#             */
-/*   Updated: 2016/10/28 19:15:25 by lmarques         ###   ########.fr       */
+/*   Updated: 2016/11/03 16:59:11 by lmarques         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,10 +32,12 @@ int					ft_isascii(int c);
 int					ft_isdigit(int c);
 int					ft_isprint(int c);
 char				*ft_itoa(int nb);
+void				ft_lst_push_back(t_list **begin, t_list *list);
 void				ft_lstadd(t_list **alst, t_list *new);
 void				ft_lstdel(t_list **alst, void (*del)(void *, size_t));
 void				ft_lstdelone(t_list **alst, void (*del)(void *, size_t));
 void				ft_lstiter(t_list *lst, void (*f)(t_list *elem));
+t_list				*ft_lstmap(t_list *lst, t_list*(*f)(t_list *elem));
 t_list				*ft_lstnew(void const *content, size_t content_size);
 int					ft_lstsize(t_list *lst);
 void				*ft_memalloc(size_t size);
