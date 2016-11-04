@@ -6,7 +6,7 @@
 /*   By: lmarques <lmarques@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/08/27 20:16:42 by lmarques          #+#    #+#             */
-/*   Updated: 2016/11/03 11:17:20 by lmarques         ###   ########.fr       */
+/*   Updated: 2016/11/04 10:35:49 by lmarques         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,8 +51,8 @@ char		*ft_strtrim(char const *s)
 	count_s = ft_nchar(s);
 	count_str = 0;
 	str = NULL;
-	str = (char *)malloc(sizeof(char) *
-			(ft_strlen(s) - ft_rnchar(s) - ft_nchar(s)) + 1);
+	str = ft_strnew((int)ft_strlen(s) == ft_nchar(s) ? 1 : (int)ft_strlen(s) -
+			ft_nchar(s) - ft_rnchar(s) + 1);
 	if (str)
 	{
 		while (count_s < ((int)ft_strlen(s) - ft_rnchar(s)))
@@ -63,5 +63,5 @@ char		*ft_strtrim(char const *s)
 		}
 		str[count_str] = '\0';
 	}
-	return ((int)ft_strlen(s) == ft_nchar(s) ? "\0" : str);
+	return (str);
 }
