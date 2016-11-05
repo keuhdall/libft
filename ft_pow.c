@@ -6,11 +6,11 @@
 /*   By: lmarques <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/03 17:47:35 by lmarques          #+#    #+#             */
-/*   Updated: 2016/11/03 17:50:31 by lmarques         ###   ########.fr       */
+/*   Updated: 2016/11/05 11:05:50 by lmarques         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_pow(int nb, unsigned int power)
+int	ft_pow(int nb, int power)
 {
 	int			count;
 	long int	result;
