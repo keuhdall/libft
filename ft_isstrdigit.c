@@ -1,23 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_sqrt.c                                          :+:      :+:    :+:   */
+/*   ft_isstrdigit.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lmarques <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/11/03 17:39:03 by lmarques          #+#    #+#             */
-/*   Updated: 2018/01/07 17:02:57 by lmarques         ###   ########.fr       */
+/*   Created: 2018/02/20 18:33:42 by lmarques          #+#    #+#             */
+/*   Updated: 2018/02/20 19:06:47 by lmarques         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_sqrt(int nb)
-{
-	int i;
+#include "libft.h"
 
-	i = 1;
-	if (nb <= 0)
-		return (0);
-	while (i * i < nb)
-		i++;
-	return (i);
+int	ft_isstrdigit(const char *s)
+{
+	int	count;
+
+	count = -1;
+	while (s[++count])
+		if (!ft_isdigit(s[count]))
+			return (0);
+	return (1);
 }
