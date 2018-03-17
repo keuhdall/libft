@@ -2,7 +2,9 @@ NAME = libft.a
 
 SRC = ft_atoi.c \
 	  ft_bzero.c \
+	  ft_count_char.c \
 	  ft_epur_str.c \
+	  ft_free_array.c \
 	  ft_isalnum.c \
 	  ft_isalpha.c \
 	  ft_isascii.c \
@@ -34,6 +36,8 @@ SRC = ft_atoi.c \
 	  ft_putstr.c \
 	  ft_putstr_fd.c \
 	  ft_realloc.c \
+	  ft_size_array.c \
+	  ft_sqrt.c \
 	  ft_strcat.c \
 	  ft_strchr.c \
 	  ft_strclr.c \
